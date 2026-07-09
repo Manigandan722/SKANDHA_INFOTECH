@@ -5,7 +5,8 @@ import WhyChooseUs from '../components/WhyChooseUs';
 import Products from '../pages/Products';
 import Services from '../pages/Services'
 import { ArrowRight, CheckCircle, ShieldCheck, Wrench, Package, Phone, Mail, Building2, HardHat, Home as H, BookOpen, Camera, Megaphone, Presentation } from 'lucide-react';
-
+import { SiHp, SiEpson } from 'react-icons/si';
+import CanonLogo from '../assets/Canon.svg';
 
 const Home = () => {
   const fadeIn = {
@@ -84,9 +85,9 @@ const Home = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="text-4xl md:text-5xl font-black tracking-tighter text-[#0096D6] hover:scale-110 transition-transform cursor-default grayscale hover:grayscale-0 opacity-80 hover:opacity-100"
+              className="text-[#0096D6] hover:scale-110 transition-transform cursor-default grayscale hover:grayscale-0 opacity-80 hover:opacity-100"
             >
-              <span className="italic">hp</span>
+              <SiHp className="w-10 h-10 md:w-12 md:h-12" />
             </motion.div>
             
             <motion.div 
@@ -94,9 +95,9 @@ const Home = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="text-4xl md:text-5xl font-black tracking-wide text-[#003399] hover:scale-110 transition-transform cursor-default grayscale hover:grayscale-0 opacity-80 hover:opacity-100"
+              className="text-[#003399] hover:scale-110 transition-transform cursor-default grayscale hover:grayscale-0 opacity-80 hover:opacity-100"
             >
-              EPSON
+              <SiEpson className="w-20 h-20 md:w-28 md:h-28 -my-6" />
             </motion.div>
             
             <motion.div 
@@ -104,9 +105,9 @@ const Home = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.3 }}
-              className="text-4xl md:text-5xl font-black tracking-tighter text-[#CC0000] hover:scale-110 transition-transform cursor-default grayscale hover:grayscale-0 opacity-80 hover:opacity-100"
+              className="text-[#CC0000] hover:scale-110 transition-transform cursor-default grayscale hover:grayscale-0 opacity-80 hover:opacity-100"
             >
-              Canon
+              <img src={CanonLogo} alt="Canon Logo" className="w-auto h-6 md:h-8" />
             </motion.div>
           </div>
         </div>
