@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { CheckCircle } from 'lucide-react';
+import WhyChooseUs from '../components/WhyChooseUs';
 
 const HPSolutions = () => {
   return (
@@ -61,6 +62,7 @@ const HPSolutions = () => {
           </motion.div>
 
         </div>
+        <WhyChooseUs />
 
       </div>
     </div>

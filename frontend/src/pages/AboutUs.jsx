@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Target, Lightbulb, Users, Award } from 'lucide-react';
-
+import WhyChooseUs from '../components/WhyChooseUs';
 const AboutUs = () => {
   const fadeIn = {
     initial: { opacity: 0, y: 20 },
@@ -14,25 +14,46 @@ const AboutUs = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Company Profile */}
-        <motion.div 
-          initial="initial"
-          whileInView="animate"
-          viewport={{ once: true }}
-          variants={fadeIn}
-          className="text-center max-w-4xl mx-auto mb-20"
-        >
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">About <span className="text-[#0096D6]">SKANDHA INFOTECH</span></h1>
-          <div className="w-24 h-1 bg-[#0096D6] mx-auto mb-8"></div>
-          <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-            SKANDHA INFOTECH is one of Tamil Nadu's trusted suppliers of professional printing equipment, genuine consumables, and comprehensive printer service solutions. As an HP Authorized Partner, we specialize in providing advanced large format printing systems, original HP inks, media, accessories, and after-sales technical support.
-          </p>
-          <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-            Serving businesses across architecture, engineering, photography, education, advertising, and commercial printing industries, we deliver reliable products backed by expert consultation and responsive customer service.
-          </p>
-          <p className="text-lg text-gray-600 leading-relaxed font-medium">
-            Whether you're establishing a new print setup or upgrading your existing infrastructure, SKANDHA INFOTECH is committed to helping you achieve outstanding print quality and operational efficiency.
-          </p>
-        </motion.div>
+        <div className="flex flex-col lg:flex-row items-stretch gap-12 mb-20">
+          <motion.div 
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="w-full lg:w-1/2 flex flex-col justify-center"
+          >
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+              About <span className="text-[#0096D6] whitespace-nowrap">SKANDHA INFOTECH</span>
+            </h1>
+            <div className="w-24 h-1 bg-[#0096D6] mb-8"></div>
+            <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+              SKANDHA INFOTECH is one of Tamil Nadu's trusted suppliers of professional printing equipment, genuine consumables, and comprehensive printer service solutions. As an HP Authorized Partner, we specialize in providing advanced large format printing systems, original HP inks, media, accessories, and after-sales technical support.
+            </p>
+            <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+              Serving businesses across architecture, engineering, photography, education, advertising, and commercial printing industries, we deliver reliable products backed by expert consultation and responsive customer service.
+            </p>
+            <p className="text-lg text-gray-600 leading-relaxed font-medium">
+              Whether you're establishing a new print setup or upgrading your existing infrastructure, SKANDHA INFOTECH is committed to helping you achieve outstanding print quality and operational efficiency.
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="w-full lg:w-1/2"
+          >
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl h-full min-h-[300px] lg:min-h-[400px]">
+              <img 
+                src="/images/hero_bg.png" 
+                alt="About SKANDHA INFOTECH" 
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-[#0096D6]/10 mix-blend-multiply"></div>
+            </div>
+          </motion.div>
+        </div>
 
         {/* Vision & Mission */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20">
@@ -87,6 +108,7 @@ const AboutUs = () => {
             </ul>
           </motion.div>
         </div>
+        <WhyChooseUs />
 
       </div>
     </div>

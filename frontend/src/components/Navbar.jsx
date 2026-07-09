@@ -13,7 +13,7 @@ const Navbar = () => {
     { name: 'About Us', path: '/about' },
     { name: 'Products', path: '/products' },
     { name: 'Services', path: '/services' },
-    { name: 'Industries', path: '/industries' },
+    // { name: 'Industries', path: '/industries' },
     { name: 'HP Solutions', path: '/hp-solutions' },
     { name: 'Gallery', path: '/gallery' },
     { name: 'Contact', path: '/contact' },
@@ -32,16 +32,17 @@ const Navbar = () => {
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/80 backdrop-blur-lg shadow-md py-0' : 'bg-white py-2 shadow-sm'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-20">
-          <div className="flex items-center">
-            <Link to="/" className="flex-shrink-0 flex items-center gap-2 group">
+        <div className="flex items-center justify-between h-20">
+          {/* Logo - Left */}
+          <div className="flex-shrink-0">
+            <Link to="/" className="flex items-center gap-2 group">
               <span className="font-extrabold text-3xl tracking-tighter text-[#0096D6] group-hover:text-[#007baf] transition-colors">SKANDHA</span>
               <span className="font-semibold text-xl text-gray-800">INFOTECH</span>
             </Link>
           </div>
           
-          {/* Desktop Menu */}
-          <div className="hidden lg:flex lg:items-center lg:space-x-1">
+          {/* Desktop Menu - Center */}
+          <div className="hidden lg:flex lg:items-center lg:space-x-1 lg:justify-center flex-1 mx-8">
             {links.map((link) => (
               <Link
                 key={link.name}
@@ -60,23 +61,27 @@ const Navbar = () => {
                 )}
               </Link>
             ))}
+          </div>
+
+          {/* Right Section: Call Now & Mobile Toggle */}
+          <div className="flex items-center gap-4">
             <a 
               href="tel:+918220821409" 
-              className="ml-6 flex items-center gap-2 bg-gradient-to-r from-[#0096D6] to-[#007baf] text-white px-5 py-2.5 rounded-full font-medium hover:shadow-lg hover:shadow-blue-500/30 transform hover:-translate-y-0.5 transition-all duration-200"
+              className="hidden lg:flex items-center gap-2 bg-gradient-to-r from-[#0096D6] to-[#007baf] text-white px-5 py-2.5 rounded-full font-medium hover:shadow-lg hover:shadow-blue-500/30 transform hover:-translate-y-0.5 transition-all duration-200"
             >
               <Phone size={18} className="animate-pulse" />
               Call Now
             </a>
-          </div>
 
-          {/* Mobile menu button */}
-          <div className="flex items-center lg:hidden">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-600 hover:text-[#0096D6] p-2 rounded-lg bg-gray-50 focus:outline-none transition-colors"
-            >
-              {isOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
+            {/* Mobile menu button */}
+            <div className="lg:hidden">
+              <button
+                onClick={() => setIsOpen(!isOpen)}
+                className="text-gray-600 hover:text-[#0096D6] p-2 rounded-lg bg-gray-50 focus:outline-none transition-colors"
+              >
+                {isOpen ? <X size={24} /> : <Menu size={24} />}
+              </button>
+            </div>
           </div>
         </div>
       </div>

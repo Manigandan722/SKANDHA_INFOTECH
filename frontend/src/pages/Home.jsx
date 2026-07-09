@@ -1,7 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { ArrowRight, CheckCircle, ShieldCheck, Wrench, Package, Phone, Mail } from 'lucide-react';
+import WhyChooseUs from '../components/WhyChooseUs';
+import Products from '../pages/Products';
+import Services from '../pages/Services'
+import { ArrowRight, CheckCircle, ShieldCheck, Wrench, Package, Phone, Mail, Building2, HardHat, Home as H, BookOpen, Camera, Megaphone, Presentation } from 'lucide-react';
+
 
 const Home = () => {
   const fadeIn = {
@@ -17,22 +21,34 @@ const Home = () => {
       }
     }
   };
+  const industries = [
+    { name: 'Architecture', icon: <Building2 size={32} />, image: '/images/ind_generic.png' },
+    { name: 'Engineering', icon: <HardHat size={32} />, image: '/images/ind_generic.png' },
+    { name: 'Construction', icon: <Building2 size={32} />, image: '/images/ind_generic.png' },
+    { name: 'Interior Designers', icon: <H size={32} />, image: '/images/ind_generic.png' },
+    { name: 'Government Depts', icon: <Building2 size={32} />, image: '/images/ind_generic.png' },
+    { name: 'Education', icon: <BookOpen size={32} />, image: '/images/ind_generic.png' },
+    { name: 'Print Shops', icon: <Presentation size={32} />, image: '/images/ind_generic.png' },
+    { name: 'Advertising', icon: <Megaphone size={32} />, image: '/images/ind_generic.png' },
+    { name: 'Photography', icon: <Camera size={32} />, image: '/images/ind_generic.png' }
+  ];
+
 
   return (
     <div className="w-full">
       {/* Hero Section */}
       <section className="relative bg-gray-900 text-white py-32 lg:py-48 overflow-hidden">
         <div className="absolute inset-0">
-          <img 
-            src="/images/hero_bg.png" 
-            alt="Printing Background" 
+          <img
+            src="/images/hero_bg.png"
+            alt="Printing Background"
             className="w-full h-full object-cover opacity-20"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/80 to-transparent"></div>
         </div>
-        
+
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
@@ -56,10 +72,50 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Authorized Partners */}
+      <section className="py-12 bg-gray-50 border-b border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-sm font-bold text-gray-500 uppercase tracking-widest mb-8">
+            We are the authorized partner of
+          </p>
+          <div className="flex flex-wrap justify-center items-center gap-16 md:gap-32">
+            <motion.div 
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+              className="text-4xl md:text-5xl font-black tracking-tighter text-[#0096D6] hover:scale-110 transition-transform cursor-default grayscale hover:grayscale-0 opacity-80 hover:opacity-100"
+            >
+              <span className="italic">hp</span>
+            </motion.div>
+            
+            <motion.div 
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+              className="text-4xl md:text-5xl font-black tracking-wide text-[#003399] hover:scale-110 transition-transform cursor-default grayscale hover:grayscale-0 opacity-80 hover:opacity-100"
+            >
+              EPSON
+            </motion.div>
+            
+            <motion.div 
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.3 }}
+              className="text-4xl md:text-5xl font-black tracking-tighter text-[#CC0000] hover:scale-110 transition-transform cursor-default grayscale hover:grayscale-0 opacity-80 hover:opacity-100"
+            >
+              Canon
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* About Highlights */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div 
+          <motion.div
             variants={staggerContainer}
             initial="initial"
             whileInView="animate"
@@ -73,7 +129,7 @@ const Home = () => {
             </motion.p>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             variants={staggerContainer}
             initial="initial"
             whileInView="animate"
@@ -93,6 +149,54 @@ const Home = () => {
               </motion.div>
             ))}
           </motion.div>
+        </div>
+      </section>
+
+      {/* Why Choose Us */}
+      <WhyChooseUs />
+      <Products />
+      <Services />
+      <section>
+        <div className="py-20 bg-gray-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div className="text-center mb-16">
+              <motion.h1
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="text-4xl font-bold text-gray-900 mb-4"
+              >
+                Industries <span className="text-[#0096D6]">We Serve</span>
+              </motion.h1>
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                className="w-24 h-1 bg-[#0096D6] mx-auto mb-6"
+              ></motion.div>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                Our high-performance HP printing solutions are tailored to meet the exacting standards of diverse professional fields.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 justify-center">
+              {industries.map((industry, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1, duration: 0.5 }}
+                  className="bg-white rounded-2xl p-8 flex flex-col items-center justify-center text-center shadow-sm hover:shadow-lg transition-all border border-gray-100 group hover:-translate-y-1"
+                >
+                  <div className="text-[#0096D6] mb-4 bg-blue-50 p-4 rounded-full group-hover:bg-[#0096D6] group-hover:text-white transition-colors duration-300">
+                    {industry.icon}
+                  </div>
+                  <h3 className="text-lg font-bold text-gray-900">{industry.name}</h3>
+                </motion.div>
+              ))}
+            </div>
+
+          </div>
         </div>
       </section>
 

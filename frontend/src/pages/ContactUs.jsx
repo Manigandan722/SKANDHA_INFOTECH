@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { MapPin, Phone, Mail, Clock, Send } from 'lucide-react';
 
 const ContactUs = () => {
-  const [formData, setFormData] = useState({ name: '', email: '', phone: '', message: '' });
+  const [formData, setFormData] = useState({ name: '', email: '', phone: '', inquiryType: '', message: '' });
   const [status, setStatus] = useState('');
 
   const handleChange = (e) => {
@@ -21,7 +21,7 @@ const ContactUs = () => {
       });
       if (response.ok) {
         setStatus('success');
-        setFormData({ name: '', email: '', phone: '', message: '' });
+        setFormData({ name: '', email: '', phone: '', inquiryType: '', message: '' });
       } else {
         setStatus('error');
       }
@@ -100,6 +100,23 @@ const ContactUs = () => {
                     placeholder="+91 12345 67890"
                   />
                 </div>
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">What are you looking for?</label>
+                <select
+                  name="inquiryType"
+                  value={formData.inquiryType}
+                  onChange={handleChange}
+                  required
+                  className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#0096D6] focus:border-transparent transition-all bg-white"
+                >
+                  <option value="" disabled>Select an option</option>
+                  <option value="Printer service">Printer service</option>
+                  <option value="Need HP Printer">Need HP Printer</option>
+                  <option value="Need EPSON Printer">Need EPSON Printer</option>
+                  <option value="Need Canon printer">Need Canon printer</option>
+                  <option value="Printer Consumables">Printer Consumables</option>
+                </select>
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">Your Message</label>
