@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Wrench, Settings, HeadphonesIcon, ShieldCheck, Clock, Truck, Activity, PenTool } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 
 const Services = () => {
   const services = [
@@ -16,6 +17,11 @@ const Services = () => {
 
   return (
     <div className="py-20 bg-white">
+      <Helmet>
+        <title>Printer Installation & Repair Services | SKANDHA INFOTECH</title>
+        <meta name="description" content="Professional installation, maintenance, and repair services for HP large format printers. Rely on our certified technical team for maximum uptime." />
+      </Helmet>
+      
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center mb-16">

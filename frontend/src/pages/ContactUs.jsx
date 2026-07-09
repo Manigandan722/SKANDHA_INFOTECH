@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { MapPin, Phone, Mail, Clock, Send } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({ name: '', email: '', phone: '', inquiryType: '', message: '' });
@@ -32,6 +33,11 @@ const ContactUs = () => {
 
   return (
     <div className="py-20 bg-gray-50">
+      <Helmet>
+        <title>Contact SKANDHA INFOTECH | Request a Quote</title>
+        <meta name="description" content="Get in touch with SKANDHA INFOTECH in Coimbatore, Tamil Nadu for inquiries, quotes, or support. We're here to help upgrade your printing business." />
+      </Helmet>
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center mb-16">

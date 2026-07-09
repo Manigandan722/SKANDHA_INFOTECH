@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Building2, HardHat, Home, BookOpen, Camera, Megaphone, Presentation } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 
 const Industries = () => {
   const industries = [
@@ -17,6 +18,11 @@ const Industries = () => {
 
   return (
     <div className="py-20 bg-gray-50">
+      <Helmet>
+        <title>Printing Solutions for Every Industry | SKANDHA INFOTECH</title>
+        <meta name="description" content="Tailored high-performance HP printing solutions for Architecture, Engineering, Construction, Photography, Advertising, and Commercial Print Shops." />
+      </Helmet>
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center mb-16">

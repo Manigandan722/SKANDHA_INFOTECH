@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Target, Lightbulb, Users, Award } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 import WhyChooseUs from '../components/WhyChooseUs';
 const AboutUs = () => {
   const fadeIn = {
@@ -11,6 +12,11 @@ const AboutUs = () => {
 
   return (
     <div className="py-20 bg-white">
+      <Helmet>
+        <title>About Us | SKANDHA INFOTECH</title>
+        <meta name="description" content="Learn about SKANDHA INFOTECH, South India's premier supplier of professional printing equipment, genuine consumables, and complete printer service solutions." />
+      </Helmet>
+      
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Company Profile */}

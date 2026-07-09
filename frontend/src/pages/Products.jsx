@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Printer, Droplets, PenTool, Wrench } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 
 const Products = () => {
   const products = [
@@ -36,6 +37,11 @@ const Products = () => {
 
   return (
     <div className="py-20 bg-gray-50">
+      <Helmet>
+        <title>HP Large Format Printers & Consumables | SKANDHA INFOTECH</title>
+        <meta name="description" content="Explore our extensive range of authentic HP DesignJet printers, original inks, and high-quality print media for engineering, architecture, and professional photography." />
+      </Helmet>
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center mb-16">

@@ -2,10 +2,16 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { CheckCircle } from 'lucide-react';
 import WhyChooseUs from '../components/WhyChooseUs';
+import { Helmet } from 'react-helmet-async';
 
 const HPSolutions = () => {
   return (
-    <div className="py-20 bg-white">
+    <div className="pt-20 bg-white">
+      <Helmet>
+        <title>Genuine HP Printing Solutions | SKANDHA INFOTECH</title>
+        <meta name="description" content="Discover specialized HP printing technology designed for exceptional precision and vibrant colors. We deliver authentic HP products backed by manufacturer support." />
+      </Helmet>
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="flex flex-col lg:flex-row items-center gap-12">

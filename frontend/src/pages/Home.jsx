@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import WhyChooseUs from '../components/WhyChooseUs';
 import Products from '../pages/Products';
+import { Helmet } from 'react-helmet-async';
 import Services from '../pages/Services'
 import { ArrowRight, CheckCircle, ShieldCheck, Wrench, Package, Phone, Mail, Building2, HardHat, Home as H, BookOpen, Camera, Megaphone, Presentation } from 'lucide-react';
 import { SiHp, SiEpson } from 'react-icons/si';
@@ -37,6 +38,11 @@ const Home = () => {
 
   return (
     <div className="w-full">
+      <Helmet>
+        <title>SKANDHA INFOTECH | HP Authorized Partner in Tamil Nadu</title>
+        <meta name="description" content="Your trusted HP Authorized Partner in Tamil Nadu for large format printing solutions, original consumables, and expert technical service." />
+      </Helmet>
+      
       {/* Hero Section */}
       <section className="relative bg-gray-900 text-white py-32 lg:py-48 overflow-hidden">
         <div className="absolute inset-0">

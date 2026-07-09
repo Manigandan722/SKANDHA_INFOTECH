@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet-async';
 
 const Gallery = () => {
   const images = [
@@ -13,6 +14,11 @@ const Gallery = () => {
 
   return (
     <div className="py-20 bg-gray-50">
+      <Helmet>
+        <title>Our Work & Installations Gallery | SKANDHA INFOTECH</title>
+        <meta name="description" content="View our successful installations, office showroom, and events. See how SKANDHA INFOTECH transforms professional print environments." />
+      </Helmet>
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center mb-16">
