@@ -51,9 +51,9 @@ const WhyChooseUs = () => {
                         },
                         {
                             icon: <div className="w-20 h-20 mx-auto bg-blue-50 rounded-full flex items-center justify-center mb-6 shadow-sm"><Award size={40} className="text-[#0055A5]" /></div>,
-                            title: '35+',
-                            subtitle: 'Years of Expertise',
-                            desc: 'Delivering trusted printing solutions and customer support since 1990.'
+                            title: '15+',
+                            subtitle: 'Years of Excellence',
+                            desc: 'A 15+ years company delivering trusted printing solutions and customer support.'
                         },
                         {
                             icon: <div className="w-20 h-20 mx-auto bg-blue-50 rounded-full flex items-center justify-center mb-6 shadow-sm"><Handshake size={40} className="text-[#0055A5]" /></div>,

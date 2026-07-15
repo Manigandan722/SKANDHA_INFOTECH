@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Phone } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Logo from '../assets/logo.svg';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,9 +36,8 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo - Left */}
           <div className="flex-shrink-0">
-            <Link to="/" className="flex items-center gap-2 group">
-              <span className="font-extrabold text-3xl tracking-tighter text-[#0096D6] group-hover:text-[#007baf] transition-colors">SKANDHA</span>
-              <span className="font-semibold text-xl text-gray-800">INFOTECH</span>
+            <Link to="/" className="flex items-center group">
+              <img src={Logo} alt="SKANDHA INFOTECH" className="h-14 w-auto" />
             </Link>
           </div>
           

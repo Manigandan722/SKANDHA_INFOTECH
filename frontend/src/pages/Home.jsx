@@ -39,8 +39,8 @@ const Home = () => {
   return (
     <div className="w-full">
       <Helmet>
-        <title>SKANDHA INFOTECH | HP Authorized Partner in Tamil Nadu</title>
-        <meta name="description" content="Your trusted HP Authorized Partner in Tamil Nadu for large format printing solutions, original consumables, and expert technical service." />
+        <title>SKANDHA INFOTECH | HP Authorized Partner in Tamil Nadu and Kerala</title>
+        <meta name="description" content="Your trusted HP Authorized Partner in Tamil Nadu and Kerala for large format printing solutions, original consumables, and expert technical service." />
       </Helmet>
       
       {/* Hero Section */}
@@ -65,7 +65,7 @@ const Home = () => {
               Your Trusted <span className="text-[#0096D6]">HP Authorized Partner</span> for Large Format Printing Solutions
             </h1>
             <p className="text-lg md:text-xl text-gray-300 mb-10 leading-relaxed">
-              Empowering businesses with world-class HP printers, genuine consumables, professional installation, and reliable technical support across Tamil Nadu.
+              Empowering businesses with world-class HP printers, genuine consumables, professional installation, and reliable technical support across Tamil Nadu and Kerala.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link to="/contact" className="bg-[#0096D6] hover:bg-[#007baf] text-white px-8 py-4 rounded-full font-semibold transition-all shadow-lg hover:shadow-xl flex items-center gap-2">
@@ -83,7 +83,7 @@ const Home = () => {
       <section className="py-12 bg-gray-50 border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-sm font-bold text-gray-500 uppercase tracking-widest mb-8">
-            We are the authorized partner of
+            Our partners: HP (Hewlett Packard), Amplify partner Epson (Channel Partner), Canon
           </p>
           <div className="flex flex-wrap justify-center items-center gap-16 md:gap-32">
             <motion.div 
@@ -132,7 +132,7 @@ const Home = () => {
             <motion.h2 variants={fadeIn} className="text-3xl font-bold text-gray-900 mb-4">About SKANDHA INFOTECH</motion.h2>
             <motion.div variants={fadeIn} className="w-24 h-1 bg-[#0096D6] mx-auto mb-6"></motion.div>
             <motion.p variants={fadeIn} className="text-gray-600 text-lg">
-              We are one of Tamil Nadu's trusted suppliers of professional printing equipment, genuine consumables, and comprehensive printer service solutions. We deliver reliable products backed by expert consultation and responsive customer service.
+              As a 15+ years company, we are one of Tamil Nadu and Kerala's trusted suppliers of professional printing equipment, genuine consumables, and comprehensive printer service solutions. We deliver reliable products backed by expert consultation and responsive customer service.
             </motion.p>
           </motion.div>
 

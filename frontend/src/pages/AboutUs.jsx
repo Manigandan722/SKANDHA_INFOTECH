@@ -33,7 +33,7 @@ const AboutUs = () => {
             </h1>
             <div className="w-24 h-1 bg-[#0096D6] mb-8"></div>
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              SKANDHA INFOTECH is one of Tamil Nadu's trusted suppliers of professional printing equipment, genuine consumables, and comprehensive printer service solutions. As an HP Authorized Partner, we specialize in providing advanced large format printing systems, original HP inks, media, accessories, and after-sales technical support.
+              SKANDHA INFOTECH is a 15+ years company and one of Tamil Nadu and Kerala's trusted suppliers of professional printing equipment, genuine consumables, and comprehensive printer service solutions. As an HP Authorized Partner, we specialize in providing advanced large format printing systems, original HP inks, media, accessories, and after-sales technical support.
             </p>
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
               Serving businesses across architecture, engineering, photography, education, advertising, and commercial printing industries, we deliver reliable products backed by expert consultation and responsive customer service.

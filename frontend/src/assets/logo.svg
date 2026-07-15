@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 56" fill="none">
+  <!-- Abstract geometric tech icon -->
+  <g transform="translate(2, 2)">
+    <!-- Hexagonal tech shape built from triangles -->
+    <polygon points="26,0 52,15 52,37 26,52 0,37 0,15" fill="#0096D6" opacity="0.15"/>
+    <polygon points="26,4 48,17 48,35 26,48 4,35 4,17" fill="none" stroke="#0096D6" stroke-width="1.5"/>
+    
+    <!-- Inner abstract "S" path made of geometric lines -->
+    <path d="M16,16 L36,16 L36,22 L20,22 L20,28 L40,28" stroke="#0096D6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M40,28 L40,34 L16,34 L16,40 L36,40" stroke="#005f87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    
+    <!-- Corner accent dots -->
+    <circle cx="26" cy="0" r="2" fill="#0096D6"/>
+    <circle cx="52" cy="15" r="2" fill="#0096D6" opacity="0.7"/>
+    <circle cx="0" cy="15" r="2" fill="#0096D6" opacity="0.7"/>
+  </g>
+
+  <!-- Company Name -->
+  <text x="64" y="26" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="800" fill="#111827" letter-spacing="2">SKANDHA</text>
+  <text x="64" y="47" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#0096D6" letter-spacing="5">INFOTECH</text>
+  
+  <!-- Subtle accent line between name parts -->
+  <line x1="64" y1="32" x2="110" y2="32" stroke="#0096D6" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+</svg>

@@ -11,11 +11,10 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-2 mb-6">
-              <span className="font-bold text-2xl tracking-tighter text-white">SKANDHA</span>
-              <span className="font-medium text-xl text-[#0096D6]">INFOTECH</span>
+              <img src="/images/logo.png" alt="SKANDHA INFOTECH" className="h-10 w-auto brightness-0 invert" />
             </div>
             <p className="text-sm text-gray-400 mb-6">
-              Your Trusted HP Authorized Partner for Large Format Printing Solutions in Tamil Nadu.
+              Your Trusted HP Authorized Partner for Large Format Printing Solutions in Tamil Nadu and Kerala.
             </p>
           </div>
 
