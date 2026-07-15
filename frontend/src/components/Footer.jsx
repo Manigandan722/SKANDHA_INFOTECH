@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import Logo from '../assets/logo.svg';
 
 const Footer = () => {
   return (
@@ -11,7 +12,7 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-2 mb-6">
-              <img src="/images/logo.png" alt="SKANDHA INFOTECH" className="h-10 w-auto brightness-0 invert" />
+              <img src={Logo} alt="SKANDHA INFOTECH" className="h-12 w-auto brightness-0 invert" />
             </div>
             <p className="text-sm text-gray-400 mb-6">
               Your Trusted HP Authorized Partner for Large Format Printing Solutions in Tamil Nadu and Kerala.
