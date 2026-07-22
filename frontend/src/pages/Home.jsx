@@ -95,7 +95,7 @@ const Home = () => {
                 <SiHp className="w-10 h-10 md:w-12 md:h-12" />
               </div>
               <p className="text-xs font-bold text-gray-500 uppercase tracking-widest text-center max-w-[150px]">
-                HP (Hewlett Packard)
+                HP Authorized Partner
               </p>
             </motion.div>
             
@@ -110,7 +110,7 @@ const Home = () => {
                 <SiEpson className="w-20 h-20 md:w-28 md:h-28" />
               </div>
               <p className="text-xs font-bold text-gray-500 uppercase tracking-widest text-center max-w-[200px]">
-                Amplify partner Epson<br/><span className="text-[10px]"></span>
+                Amplify partner Epson
               </p>
             </motion.div>
             
