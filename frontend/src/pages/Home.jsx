@@ -82,18 +82,21 @@ const Home = () => {
       {/* Authorized Partners */}
       <section className="py-12 bg-gray-50 border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-sm font-bold text-gray-500 uppercase tracking-widest mb-8">
-            Our partners: HP (Hewlett Packard), Amplify partner Epson (Channel Partner), Canon
-          </p>
-          <div className="flex flex-wrap justify-center items-center gap-16 md:gap-32">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 uppercase tracking-wider">Authorized Partners</h2>
+          <div className="flex flex-wrap justify-center items-start gap-12 md:gap-24">
             <motion.div 
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="text-[#0096D6] hover:scale-110 transition-transform cursor-default grayscale hover:grayscale-0 opacity-80 hover:opacity-100"
+              className="flex flex-col items-center gap-6 text-[#0096D6] hover:scale-110 transition-transform cursor-default grayscale hover:grayscale-0 opacity-80 hover:opacity-100"
             >
-              <SiHp className="w-10 h-10 md:w-12 md:h-12" />
+              <div className="h-20 md:h-24 flex items-center justify-center">
+                <SiHp className="w-10 h-10 md:w-12 md:h-12" />
+              </div>
+              <p className="text-xs font-bold text-gray-500 uppercase tracking-widest text-center max-w-[150px]">
+                HP (Hewlett Packard)
+              </p>
             </motion.div>
             
             <motion.div 
@@ -101,9 +104,14 @@ const Home = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="text-[#003399] hover:scale-110 transition-transform cursor-default grayscale hover:grayscale-0 opacity-80 hover:opacity-100"
+              className="flex flex-col items-center gap-6 text-[#003399] hover:scale-110 transition-transform cursor-default grayscale hover:grayscale-0 opacity-80 hover:opacity-100"
             >
-              <SiEpson className="w-20 h-20 md:w-28 md:h-28 -my-6" />
+              <div className="h-20 md:h-24 flex items-center justify-center">
+                <SiEpson className="w-20 h-20 md:w-28 md:h-28" />
+              </div>
+              <p className="text-xs font-bold text-gray-500 uppercase tracking-widest text-center max-w-[200px]">
+                Amplify partner Epson<br/><span className="text-[10px]"></span>
+              </p>
             </motion.div>
             
             <motion.div 
@@ -111,9 +119,14 @@ const Home = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.3 }}
-              className="text-[#CC0000] hover:scale-110 transition-transform cursor-default grayscale hover:grayscale-0 opacity-80 hover:opacity-100"
+              className="flex flex-col items-center gap-6 text-[#CC0000] hover:scale-110 transition-transform cursor-default grayscale hover:grayscale-0 opacity-80 hover:opacity-100"
             >
-              <img src={CanonLogo} alt="Canon Logo" className="w-auto h-6 md:h-8" />
+              <div className="h-20 md:h-24 flex items-center justify-center">
+                <img src={CanonLogo} alt="Canon Logo" className="w-auto h-6 md:h-8" />
+              </div>
+              <p className="text-xs font-bold text-gray-500 uppercase tracking-widest text-center max-w-[150px]">
+              Channel Partner Canon
+              </p>
             </motion.div>
           </div>
         </div>
